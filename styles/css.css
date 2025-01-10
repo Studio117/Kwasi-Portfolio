@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "avenir next", "san serif";
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  height: 100vh;
+  min-height: 700px;
+  width: 100%;
+  padding: 3em 1em;
+}
+
+.active {
+  color: #FFFFFF;
+  font-weight: 400;
+  border-bottom: 4px solid #FFFFFF;
+}
+
+.footer {
+  background-color: #323232;
+  color: #FFFFFF;
+  padding: 1em 2em;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+@media only screen and (min-width: 1280px) {
+  .footer {
+    padding: 1.2em 7em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__catXsocials {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 1.5em;
+  }
+}
+.footer__heading {
+  color: #323232;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 2.8em;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  font-size: 2.5rem;
+}
+@media only screen and (min-width: 768px) {
+  .footer__heading {
+    font-size: 2.2rem;
+    line-height: 2.5em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__heading {
+    font-size: 1.6em;
+    font-weight: 600;
+  }
+}
+.footer__socials {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1.7em;
+}
+@media only screen and (min-width: 768px) {
+  .footer__socials {
+    display: inline-block;
+    padding-bottom: 0;
+  }
+}
+.footer__instagram-icon {
+  width: 2em;
+}
+@media only screen and (min-width: 768px) {
+  .footer__instagram-icon {
+    width: 1.1em;
+  }
+}
+.footer__fb-icon {
+  width: 1.2em;
+}
+@media only screen and (min-width: 768px) {
+  .footer__fb-icon {
+    width: 0.6em;
+    margin-left: 1em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__fb-icon {
+    width: 0.6em;
+  }
+}
+.footer__xtwitter-icon {
+  width: 2em;
+  margin-left: 1em;
+}
+@media only screen and (min-width: 768px) {
+  .footer__xtwitter-icon {
+    width: 1.2em;
+    margin-left: 1em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__xtwitter-icon {
+    width: 1.2em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__copy-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__copy-wrapper {
+    width: 60vw;
+  }
+}
+.footer__spotlight {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5em;
+  padding-bottom: 1.8em;
+}
+@media only screen and (min-width: 768px) {
+  .footer__spotlight {
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 0.7em 0 1.2em;
+  }
+}
+.footer__address, .footer__overseas-agent, .footer__local-agent {
+  padding-bottom: 1em;
+}
+@media only screen and (min-width: 768px) {
+  .footer__address, .footer__overseas-agent, .footer__local-agent {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .footer__email {
+    font-size: 0.9rem;
+  }
+}
+.footer__copy-left, .footer__copy-center, .footer__copy-right {
+  padding-bottom: 1.5em;
+}
+@media only screen and (min-width: 768px) {
+  .footer__copy-left, .footer__copy-center, .footer__copy-right {
+    width: 30%;
+  }
+}
+.footer__logo {
+  min-width: 8em;
+  padding: 1.5em 0 0.5em;
+}
+@media only screen and (min-width: 768px) {
+  .footer__logo {
+    position: absolute;
+    min-width: 120px;
+    right: 1.5em;
+    top: 1.7em;
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .footer__logo {
+    right: 0;
+  }
+}
+.footer__copyright {
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.6em;
+  padding-bottom: 2em;
+}
+@media only screen and (min-width: 1280px) {
+  .footer__copyright {
+    font-size: 0.7em;
+  }
+}
+
+#header .header {
+  background-color: red;
+  height: 54px;
+}
+
+#hero {
+  background-color: rgb(86, 41, 41);
+  text-align: center;
+}
+#hero .hero {
+  background-color: red;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2em;
+}
+#hero .hero__image-container {
+  display: flex;
+  justify-content: center;
+}
+#hero .hero__image {
+  width: 80%;
+  min-width: 200px;
+  max-width: 400px;
+  border-radius: 50%;
+}
+#hero .hero__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}/*# sourceMappingURL=css.css.map */

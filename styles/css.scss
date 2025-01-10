@@ -1,0 +1,45 @@
+@use '../styles/partials/global.scss' as *;
+@use '../styles/partials/mixins.scss' as *;
+@use '../styles/partials/variable.scss' as *;
+
+#header {
+  .header {
+    background-color: red;
+    height: 54px;
+  }
+}
+
+#hero {
+
+    background-color: rgb(86, 41, 41);
+    text-align: center;
+
+  .hero {
+    background-color: red;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2em;
+
+    &__image-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__image {
+      //   background-color: red;
+      //   padding: 1em;
+      width: 80%;
+      min-width: 200px;
+      max-width: 400px;
+      border-radius: 50%;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+  }
+}

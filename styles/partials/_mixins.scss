@@ -1,0 +1,103 @@
+@use "./variable"as *;
+
+@mixin mobileWidth {
+    @media only screen and (max-width: 767px) {
+        width: 100vw;
+        min-width: 320px;
+    }
+}
+
+@mixin tabletWidth {
+    @media only screen and (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin desktopWidth {
+    @media only screen and (min-width:1280px) {
+        @content;
+    }
+}
+
+@mixin NavbarContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin tabNavbarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@mixin mHeaderXfooterLogo {
+    color: $white-primary;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1em;
+    padding-top: 0.5em;
+    letter-spacing: 1px;
+}
+
+@mixin mNavItemWrap {
+    display: flex;
+    width: 100%;
+}
+
+@mixin mNavLinkItem {
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $murcury-secondary;
+    line-height: 2em;
+}
+
+@mixin CategoryHeading {
+    color: $bandsite-Black-primary;
+    font-size: $mPageXsection-header-font-size;
+    font-weight: $mSubHeader-font-weight;
+    line-height: $mPageXsection-header-line-height;
+    letter-spacing: 2px;
+}
+
+@mixin CopyHighlight {
+    font-size: $mSubHeader-font-size;
+    font-weight: $mSubHeader-font-weight;
+    line-height: $mSubHeader-line-height;
+    padding-bottom: 1.8em;
+}
+
+@mixin mBodyCopy {
+    color: $bandsite-Black-primary;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.5em;
+    padding-bottom: 1em;
+}
+
+@mixin mBodyCopyHeader {
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 2.5em;
+    padding: 0 0 0.5em;
+}
+
+@mixin socials {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.7em;
+}
+
+@mixin formRadius {
+    border-radius: 0.4rem;
+
+}
+
+@mixin formInputStyling {
+    border: 1px solid $silver-primary;
+    background-color: $murcury-secondary;
+
+}

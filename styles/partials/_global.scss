@@ -1,310 +1,53 @@
-@use "../../styles/partials/variable"as *;
-@use "../../styles/partials/mixins"as *;
-
-
-// @font-face {
-//     font-family: avenir next, sans-serif;
-//     src: url(../../assets/font/AvenirNextLTPro-Regular.otf);
-//     font-weight: 400;
-// }
-
-// @font-face {
-//     font-family: avenir next, sans-serif;
-//     src: url(../../assets/font/AvenirNextLTPro-Demi.otf);
-//     font-weight: 600;
-// }
-
-// @font-face {
-//     font-family: avenir next, sans-serif;
-//     src: url(../../assets/font/AvenirNextLTPro-Bold.otf);
-//     font-weight: 700;
-// }
-
-
+@use "../../styles/partials/variable" as *;
+@use "../../styles/partials/mixins" as *;
 
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "avenir next", "san serif";
-    margin: 0;
-    padding: 0;
+  font-family: 'Rubik', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
-    color: $white-primary;
+  text-decoration: none;
+  color: $white-primary;
+  color: #aaaa;
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100dvh;
-    height: 100vh;
-    min-height: 700px;
-    width: 100%;
-    padding: 3em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+  height: 100vh;
+  height: 100%;
+  min-height: 700px;
+  width: 100%;
+  padding: 3em 1em;
+  border-bottom: solid 1px #aaaa;
 }
 
+#header {
+  background-color: black;
+//   padding: 1.5em 5em;
+  // height: 200px;
 
-// .header {
-//     background-color: $bandsite-Black-primary;
-//     padding: 1.5em 0 0;
+  .header {
+    background-color: rgb(16, 100, 15);
+    // height: 354px;
+  }
+}
 
-//     @include tabletWidth {
-//         padding-top: 0;
-//     }
-
-//     @include desktopWidth {
-//         padding-top: 1.1em;
-//     }
-
-//     &__navbar {
-//         @include NavbarContainer;
-
-//         @include tabletWidth {
-//             @include tabNavbarContainer;
-//             justify-content: space-between;
-//             max-width: 400px;
-//             padding-left: 2em;
-//         }
-
-//         @include desktopWidth {
-//             margin-left: 4em;
-//         }
-//     }
-
-//     &__logo {
-//         min-width: 190px;
-//         margin-top: 0.5em;
-
-//         @include tabletWidth {
-//             margin-top: 0;
-//             font-size: 1.6em;
-//             font-weight: 250;
-//             padding: 0 1em;
-//         }
-
-//         @include desktopWidth {
-//             padding: 0.8em;
-
-//         }
-//     }
-
-
-//     &__nav-links {
-//         display: flex;
-//         width: 100%;
-//         justify-content: space-evenly;
-
-//         @include tabletWidth {
-//             padding: 0.3em 2em 0;
-//             gap: 2.5em;
-//         }
-//     }
-
-//     &__nav-link {
-//         @include mNavItemWrap;
-//     }
-
-
-
-
-//     &__nav-item {
-//         width: 100%;
-//         height: 100%;
-//         padding: 0.5em;
-//         @include mNavLinkItem;
-
-//         @include desktopWidth {
-//             font-size: 1em;
-//             padding: 1.2em 0;
-//         }
-//     }
+// .active {
 
 // }
 
-    .active {
-        color: $white-primary;
-        font-weight: 400;
-        border-bottom: 4px solid $white-primary;
-    }
-
-.footer {
-    background-color: $bandsite-Black-primary;
-    color: $white-primary;
-    padding: 1em 2em;
-    font-size: $mBodyXfooterCopy-font-size;
-    font-weight: $mBodyXfooterCopy-font-weight;
-    line-height: $mBodyXfooterCopy-line-height;
-
-    @include desktopWidth {
-        padding: 1.2em 7em;
-
-    }
-
-
-    &__wrapper {
-
-        @include tabletWidth {
-            display: flex;
-            flex-direction: column;
-            position: relative;
-            max-width: 100%;
-        }
-    }
-
-    &__catXsocials {
-        @include tabletWidth {
-            display: flex;
-            width: 80%;
-            align-items: center;
-            gap: 1.5em;
-
-        }
-    }
-
-    &__heading {
-        @include CategoryHeading;
-        color: $white-primary;
-        font-size: $tXd-Section-Header-font-size;
-
-        @include tabletWidth {
-            font-size: 2.2rem;
-            line-height: 2.5em;
-        }
-
-        @include desktopWidth {
-            font-size: 1.6em;
-            font-weight: 600;
-        }
-    }
-
-    &__socials {
-        @include socials;
-
-        @include tabletWidth {
-            display: inline-block;
-            padding-bottom: 0;
-        }
-    }
-
-    &__instagram-icon {
-        width: 2em;
-
-        @include tabletWidth {
-            width: 1.1em;
-        }
-    }
-
-    &__fb-icon {
-        width: 1.2em;
-
-        @include tabletWidth {
-            width: 0.6em;
-            margin-left: 1em;
-        }
-
-        @include desktopWidth {
-            width: 0.6em;
-        }
-    }
-
-    &__xtwitter-icon {
-        width: 2em;
-        margin-left: 1em;
-
-        @include tabletWidth {
-            width: 1.2em;
-            margin-left: 1em;
-        }
-
-        @include desktopWidth {
-            width: 1.2em;
-
-        }
-    }
-
-    &__copy-wrapper {
-        @include tabletWidth {
-            display: flex;
-            justify-content: space-around;
-            margin-bottom: 1em;
-        }
-
-        @include desktopWidth {
-            width: 60vw;
-
-        }
-    }
-
-    &__spotlight {
-        @include CopyHighlight;
-
-        @include tabletWidth {
-            font-size: 0.9rem;
-            font-weight: 500;
-            padding: 0.7em 0 1.2em;
-        }
-    }
-
-    &__address,
-    &__overseas-agent,
-    &__local-agent {
-        padding-bottom: 1em;
-
-        @include tabletWidth {
-            font-size: 0.9rem;
-        }
-    }
-
-    &__email {
-        @include tabletWidth {
-            font-size: 0.9rem;
-        }
-    }
-
-    &__copy-left,
-    &__copy-center,
-    &__copy-right {
-        padding-bottom: 1.5em;
-
-        @include tabletWidth {
-            width: 30%;
-        }
-    }
-
-    &__logo {
-        min-width: 8em;
-        padding: 1.5em 0 0.5em;
-
-        @include tabletWidth {
-            position: absolute;
-            min-width: 120px;
-            right: 1.5em;
-            top: 1.7em;
-            padding: 0;
-        }
-
-        @include desktopWidth {
-            right: 0;
-        }
-    }
-
-    &__copyright {
-        font-size: 0.8rem;
-        font-weight: 400;
-        line-height: 1.6em;
-        padding-bottom: 2em;
-
-        @include desktopWidth {
-            font-size: 0.7em;
-        }
-    }
-
-}
+// .footer {
+  
+// }

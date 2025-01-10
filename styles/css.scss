@@ -1,21 +1,13 @@
-@use '../styles/partials/global.scss' as *;
-@use '../styles/partials/mixins.scss' as *;
-@use '../styles/partials/variable.scss' as *;
-
-#header {
-  .header {
-    background-color: red;
-    height: 54px;
-  }
-}
+@use "../styles/partials/global.scss" as *;
+@use "../styles/partials/mixins.scss" as *;
+@use "../styles/partials/variable.scss" as *;
 
 #hero {
-
-    background-color: rgb(86, 41, 41);
-    text-align: center;
+  // background-color: rgb(86, 41, 41);
+  text-align: center;
 
   .hero {
-    background-color: red;
+    // background-color: red;
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -30,16 +22,109 @@
     &__image {
       //   background-color: red;
       //   padding: 1em;
-      width: 80%;
+      width: 40vw;
       min-width: 200px;
-      max-width: 400px;
+      max-width: 275px;
       border-radius: 50%;
     }
 
+    // &__info {
+    //     display: flex;
+    //     flex-direction: column;
+    //     gap: 1em;
+    // }
+
     &__info {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
+      // background-color: purple;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.25em;
+      text-align: center;
+
+      @include tabletWidth {
+        width: 60%;
+      }
+
+      @include laptopWidth {
+        width: 50%;
+      }
     }
+
+    //     &__name-profession {
+    // margin-bottom: 2rem;
+    //     }
+
+    &__name {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    &__profession {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      font-weight: semi-bold;
+    }
+
+    // &__github-icon,
+    // &__linkedin-icon,
+    // &__x-twitter-icon {
+    //   width: 40px;
+    // }
+
+    &__socials {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 50px;
+      gap: 1.5em;
+
+      a {
+        width: fit-content;
+      }
+    }
+
+    &__github-icon {
+      max-height: 35px;
+    }
+
+    &__linkedin-icon,
+    &__x-twitter-icon {
+      height: 30px;
+    }
+
+    &__description {
+      font-family: "Roboto", monospace;
+      max-height: 24ch;
+    }
+
+    &__cv-btn {
+      background-color: #0987f2;
+      color: white;
+      padding: 1em 1.25em;
+      font-size: 1.25rem;
+      border: none;
+      border-radius: 1.25em;
+      font-weight: bold;
+      box-shadow: 0 4px 4ppx rgba(0, 0, 0, 0.25);
+      transition: box-shadw 200ms ease-in-out, tansform 200ms ease-in-out;
+    }
+
+    &__cv-btn:hover {
+      transform: scale(1.05);
+    }
+
+    &__cv-btn:active {
+      transform: translateY(2px);
+    }
+  }
+}
+
+// ++++++++++++PROJECTS SECTIOM++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+#projects {
+  .projects {
+    background-color: red;
   }
 }

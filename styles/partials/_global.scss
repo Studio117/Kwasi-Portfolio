@@ -52,3 +52,24 @@ section {
   font-weight: bold;
   margin-bottom: 1rem;
 }
+
+#footer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding: 2em 0 ;
+    width: 100%;
+    p {
+      // background-color: greenyellow;
+      width: fit-content;
+      text-align: center;
+      font-size: 1.125rem;
+      letter-spacing: 2px;
+      line-height: 1.5em;
+      color: gray;
+    }
+  }
+}

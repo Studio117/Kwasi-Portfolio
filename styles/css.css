@@ -10,6 +10,11 @@ body {
   padding: 0;
 }
 
+h1, h2, h3, h4, h5, h6, a, p {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
   color: #FFFFFF;
@@ -25,7 +30,7 @@ section {
   height: 100%;
   min-height: 700px;
   width: 100%;
-  padding: 3em 1em;
+  padding: 3em 0;
   border-bottom: solid 1px rgba(170, 170, 170, 0.6666666667);
 }
 
@@ -34,6 +39,12 @@ section {
 }
 #header .header {
   background-color: rgb(16, 100, 15);
+}
+
+.catergory-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 #hero {
@@ -123,5 +134,45 @@ section {
 }
 
 #projects .projects {
-  background-color: red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em 1em;
+  padding-top: 2em;
+}
+#projects .projects__side-note {
+  font-family: "Roboto", monospace;
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
+}
+#projects .projects__list {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+#projects .projects__list-2lvs-img {
+  border-radius: 1em;
+}
+#projects .projects__list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  border: 1px solid rgb(73, 73, 80);
+  border-radius: 1em;
+}
+#projects .projects__list-item-lit {
+  padding-top: 1em;
+}
+#projects .projects__list-item h3 {
+  letter-spacing: 1px;
+}
+#projects .projects__list-item p {
+  font-family: "Roboto", monospace;
+  letter-spacing: 2px;
 }/*# sourceMappingURL=css.css.map */

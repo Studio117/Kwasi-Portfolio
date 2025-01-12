@@ -54,16 +54,16 @@ section {
 }
 
 #footer {
+  background-color: #aaaa;
   width: 100vw;
   display: flex;
   justify-content: center;
   .footer {
     display: flex;
     justify-content: center;
-    padding: 2em 0 ;
+    padding: 1em 0 ;
     width: 100%;
     p {
-      // background-color: greenyellow;
       width: fit-content;
       text-align: center;
       font-size: 1.125rem;

@@ -1,0 +1,29 @@
+@use "../styles/partials/global.scss" as *;
+@use "../styles/partials/mixins.scss" as *;
+@use "../styles/partials/variable.scss" as *;
+
+body {
+  // background-color: green;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  // align-items: space-between;
+  // position: relative;
+}
+
+#content-area {
+  height: 100%;
+  .content-area {
+    background-color: rgb(86, 86, 31);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+  }
+}
+
+// #footer {
+//   // background-color: red;
+// }

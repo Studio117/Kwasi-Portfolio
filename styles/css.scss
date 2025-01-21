@@ -95,7 +95,8 @@
     }
 
     &__description {
-      font-family: "Roboto", monospace;
+      font-family: "Roboto", monospace; 
+      width: 80%;
       max-height: 24ch;
     }
 
@@ -228,6 +229,8 @@
     width: 80vw;
     max-width: 600px;
   }
+
+  background-color: #716a77;
 
   input[type="submit"] {
     display: flex;

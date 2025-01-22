@@ -211,6 +211,213 @@
 
 // ++++++++++++CONTACT SECTIOM+++++++++++++++
 
+#skills {
+  padding: 3rem 1rem 2rem;
+
+  .skills {
+    // background-color: teal;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+
+    .category-heading {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 1.125rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+
+    &__frontend {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      padding: 0 0 1em;
+
+      hr {
+        // height: 16px;
+        width: 60%;
+        color: red;
+        padding-top: 0;
+        // margin-top: -1em;
+        padding: 0;
+      }
+
+      &-icons {
+        // background-color: blue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+
+        &-item {
+          display: flex;
+          width: calc(100% / 8);
+
+          img {
+            width: 100%;
+            max-height: 50px;
+          }
+          #jsIcon {
+            height: 45px;
+            border-radius: 0.75em;
+          }
+        }
+      }
+    }
+
+    &__backend {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      padding: 0 0 1em;
+
+      hr {
+        // height: 16px;
+        width: 60%;
+        color: red;
+        padding-top: 0;
+        // margin-top: -1em;
+        padding: 0;
+      }
+
+      &-icons {
+        // background-color: blue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 0.3em;
+
+        &-item {
+          display: flex;
+          width: calc(100% / 3.5);
+
+          img {
+            width: 100%;
+            max-height: 50px;
+          }
+        }
+      }
+    }
+
+    &__collab-tools {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1em;
+      padding: 0 0 1em;
+
+      hr {
+        // height: 16px;
+        width: 60%;
+        color: red;
+        padding-top: 0;
+        // margin-top: -1em;
+        padding: 0;
+      }
+
+      &-icons {
+        // background-color: blue;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+
+        &-item {
+          display: flex;
+          width: calc(100% / 8);
+
+          img {
+            width: 100%;
+            max-height: 50px;
+          }
+          #jsIcon {
+            height: 45px;
+            border-radius: 0.75em;
+          }
+        }
+      }
+    }
+
+    &__content-management {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5em;
+      padding: 0 0 1em;
+
+
+      hr {
+        width: 60%;
+        color: red;
+        padding-top: 0;
+        margin-top: -1em;
+        padding: 0;
+      }
+
+      &-icons {
+        // background-color: #3030db;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 2.1em;
+        padding: 1em 0 0;
+        margin-bottom: 1rem;
+
+        &-item {
+          display: flex;
+          width: calc(100% / 6);
+
+          img,
+          svg {
+            width: 100%;
+            max-height: 50px;
+          }
+          #weeblyIcon {
+            width: 100%;
+            max-width: 68px;
+            border-radius: 0.75em;
+          }
+          #webflowIcon {
+            width: 45px;
+            border-radius: 0.75em;
+          }
+          #squarespaceIcon {
+            width: 48px;
+            border-radius: 0.75em;
+            padding-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ++++++++++++SKILLS SECTIOM+++++++++++++++
+
 #contact {
   .contact {
     // background-color: rgb(113, 78, 31);

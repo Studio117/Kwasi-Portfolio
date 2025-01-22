@@ -79,6 +79,20 @@ section {
   justify-content: space-evenly;
   gap: 2em;
 }
+@media (min-width: 769px) {
+  #hero .hero {
+    width: 80%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1025px) {
+  #hero .hero {
+    width: 70%;
+    max-width: 1200px;
+    gap: 4em;
+  }
+}
 #hero .hero__image-container {
   display: flex;
   justify-content: center;
@@ -103,7 +117,7 @@ section {
 }
 @media (min-width: 1025px) {
   #hero .hero__info {
-    width: 50%;
+    width: 75%;
   }
 }
 #hero .hero__name {
@@ -137,6 +151,17 @@ section {
   font-family: "Roboto", monospace;
   width: 80%;
   max-height: 24ch;
+}
+@media (min-width: 769px) {
+  #hero .hero__description {
+    margin: 0 auto 1em;
+  }
+}
+@media (min-width: 1025px) {
+  #hero .hero__description {
+    margin: 0 auto 1.5em;
+    width: 100%;
+  }
 }
 #hero .hero__cv-btn {
   background-color: #0987f2;

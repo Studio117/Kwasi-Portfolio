@@ -16,6 +16,15 @@
     gap: 2em;
 
     @include tabletWidth {
+      width: 80%;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+
+    @include laptopWidth {
+      width: 70%;
+      max-width: 1200px;
+      gap: 4em;
     }
 
     &__image-container {
@@ -44,7 +53,7 @@
       }
 
       @include laptopWidth {
-        width: 50%;
+        width: 75%;
       }
     }
 
@@ -91,6 +100,15 @@
       font-family: "Roboto", monospace;
       width: 80%;
       max-height: 24ch;
+
+      @include tabletWidth {
+        margin: 0 auto 1em;
+      }
+
+      @include laptopWidth {
+        margin: 0 auto 1.5em;
+        width: 100%;
+      }
     }
 
     &__cv-btn {

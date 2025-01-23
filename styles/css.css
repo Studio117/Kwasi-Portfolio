@@ -283,6 +283,11 @@ section {
   align-items: center;
   gap: 1em;
 }
+@media (min-width: 1025px) {
+  #skills .skills {
+    max-width: 1200px;
+  }
+}
 #skills .skills .category-heading {
   display: flex;
   width: 100%;
@@ -308,6 +313,11 @@ section {
   color: red;
   padding-top: 0;
   padding: 0 0 1em;
+}
+@media (min-width: 1025px) {
+  #skills .skills__frontend hr {
+    width: 40%;
+  }
 }
 #skills .skills__frontend-icons {
   width: 100%;
@@ -343,6 +353,11 @@ section {
   color: red;
   padding: 0 0 1em;
 }
+@media (min-width: 1025px) {
+  #skills .skills__backend hr {
+    width: 40%;
+  }
+}
 #skills .skills__backend-icons {
   width: 100%;
   display: flex;
@@ -373,6 +388,11 @@ section {
   color: red;
   padding: 0 0 1em;
 }
+@media (min-width: 1025px) {
+  #skills .skills__collab-tools hr {
+    width: 20%;
+  }
+}
 #skills .skills__collab-tools-icons {
   width: 100%;
   display: flex;
@@ -380,7 +400,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 2em;
-  padding: 1em 0 0;
+  padding: 2em 0 1em;
 }
 #skills .skills__collab-tools-icons-item {
   display: flex;
@@ -401,7 +421,7 @@ section {
   align-items: center;
   justify-content: center;
   gap: 1.5em;
-  padding: 0 0 1em;
+  padding: 1em 0 2em;
 }
 #skills .skills__content-management hr {
   width: 60%;
@@ -409,14 +429,20 @@ section {
   margin-top: -1em;
   padding: 0 0 1em;
 }
+@media (min-width: 1025px) {
+  #skills .skills__content-management hr {
+    width: 40%;
+  }
+}
 #skills .skills__content-management-icons {
   width: 100%;
+  max-width: 1000px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 2.1em;
-  padding: 1em 0 1em;
+  padding: 1em 0 3em;
 }
 #skills .skills__content-management-icons-item {
   display: flex;

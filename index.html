@@ -42,66 +42,74 @@
     <!-- ++++++++++++NAVBAR +++++++++++++++++++++++ -->
     <header id="header" class="m-0 p-0 fixed-top">
       <nav class="header navbar p-0">
-        <div id="logo">
-          <img src="./assets/images/favicon.png" alt="" />
-        </div>
-        <div class="container-fluid justify-content-end d-md-none">
-          <!-- =================MOBILE-NAV=================== -->
-          <span
-            class="py-2"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-            aria-label="Toggle navigation">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              version="1.1"
-              width="2.5em"
-              height="2.5em"
-              viewBox="0 0 24 24"
-              lc-helper="svg-icon"
-              fill="#2a2929"
-              class="text-info">
-              <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
-            </svg>
-          </span>
-          <!-- =================OFF-CANVAS======================== -->
-          <div
-            class="offcanvas offcanvas-end w-100 p-5 d-flex justify-content-center"
-            tabindex="-1"
-            id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div
-              class="offcanvas-body container-fluid align-items-center justify-content-center d-flex">
-              <ul
-                class="navbar-nav d-flex align-items-center gap-4 fs-3 fw-bold">
-                <li class="nav-item" data-bs-dismiss="offcanvas">
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"></button>
-                </li>
-                <li class="nav-item" data-bs-dismiss="offcanvas">
-                  <a href="#hero">Home</a>
-                </li>
+        <div class="header__logoXnav">
+          <div id="logo" class="header__logoXnav-logo">
+            <div id="logo" class="header__logoXnav-logo-container">
+              <img src="./assets/images/favicon.png" alt="logo" />
+            </div>              <h2>Kwasi Oteng-Baah</h2>
 
-                <li class="nav-item" data-bs-dismiss="offcanvas">
-                  <a href="#projects">Projects</a>
-                </li>
-                <li class="nav-item" data-bs-dismiss="offcanvas">
-                  <a href="#skills">Skills</a>
-                </li>
-                <li class="nav-item" data-bs-dismiss="offcanvas">
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
+          </div>
+
+          <!-- =================MOBILE-NAV=================== -->
+          <div
+            class="container-fluid justify-content-end d-md-none header__logoXnav-mobile-nav">
+            <!-- =================MOBILE-NAV-TRIGGER=========== -->
+            <span
+              id="menu"
+              class="py-2 header__logoXnav-mobile-nav-icon"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                version="1.1"
+                width="2.5em"
+                height="2.5em"
+                viewBox="0 0 24 24"
+                lc-helper="svg-icon"
+                fill="#fff"
+                class="text-info">
+                <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+              </svg>
+            </span>
+            <!-- =================OFF-CANVAS======================== -->
+            <div
+              class="offcanvas offcanvas-end w-100 p-5 d-flex justify-content-center"
+              tabindex="-1"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel">
+              <div
+                class="offcanvas-body container-fluid align-items-center justify-content-center d-flex">
+                <ul
+                  class="navbar-nav d-flex align-items-center gap-4 fs-3 fw-bold">
+                  <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
+                  </li>
+                  <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a href="#hero">Home</a>
+                  </li>
+
+                  <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a href="#projects">Projects</a>
+                  </li>
+                  <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a href="#skills">Skills</a>
+                  </li>
+                  <li class="nav-item" data-bs-dismiss="offcanvas">
+                    <a href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-
         <!-- ===========TABLET-X-DESKTOP-NAV=========== -->
         <div
           class="container-fluid d-none d-md-inline align-middle justify-content-end text-end gap-0 py-3 pe-md-5">

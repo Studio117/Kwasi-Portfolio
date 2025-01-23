@@ -1,4 +1,4 @@
-@use "./variable"as *;
+@use "./variable" as *;
 
 // @mixin xSmobileWidth {
 //     @media (max-width: 480px) {
@@ -20,7 +20,6 @@
 //     }
 // }
 
-
 // @mixin laptopWidth {
 //     @media (min-width: 1025px) and (max-width: 1440px) {
 //         @content;
@@ -33,44 +32,56 @@
 //     }
 // }
 
-
-
-
-
-
 // Very Small Mobile Devices (max-width: 480px)
 @mixin xSmobileWidth {
-    @media (max-width: 480px) {
-        width: 100vw;
-        min-width: 320px;
-        // You can add more styles specific for xSmall devices
-    }
+  @media (max-width: 480px) {
+    width: 100vw;
+    min-width: 320px;
+    // You can add more styles specific for xSmall devices
+  }
 }
 
 // Mobile Devices (481px - 768px)
 @mixin mobileWidth {
-    @media (min-width: 481px) {
-        @content; // Any style passed within the mixin will apply here
-    }
+  @media (min-width: 481px) {
+    @content; // Any style passed within the mixin will apply here
+  }
 }
 
 // Tablet Devices (769px - 1024px)
 @mixin tabletWidth {
-    @media (min-width: 769px) {
-        @content;
-    }
+  @media (min-width: 769px) {
+    @content;
+  }
 }
 
 // Laptop Devices (1025px - 1440px)
 @mixin laptopWidth {
-    @media (min-width: 1025px) {
-        @content;
-    }
+  @media (min-width: 1025px) {
+    @content;
+  }
 }
 
 // Desktop Devices (1441px - 1920px)
 @mixin desktopWidth {
-    @media (min-width: 1441px) {
-        @content;
-    }
+  @media (min-width: 1441px) {
+    @content;
+  }
+}
+
+@mixin headerContainer {
+    
+  padding: 0 1rem;
+
+  @include tabletWidth {
+    padding: 1rem 2rem;
+  }
+
+  @include laptopWidth {
+    padding: 1rem 3rem;
+  }
+
+  @include desktopWidth {
+    padding: 1rem 4rem;
+  }
 }

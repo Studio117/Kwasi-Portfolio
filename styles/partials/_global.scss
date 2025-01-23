@@ -43,74 +43,74 @@ section {
 }
 
 #header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
 
   .header {
-    background-color: #1d7738;
+    @include headerContainer; 
+       background-color: #1d7738;
     // background-color: rgb(255, 255, 255);
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: beige;
     border-bottom: 1px solid #aaaaaa5d;
 
-    &__logoXnav {
-      display: flex;
-      width: 100%;
 
-      &-logo {
+    &__logo {
+      display: flex;
+      // justify-content: end;
+      align-items: center;
+      min-width: 250px;
+      gap: 0.5em;
+      // padding: 0 0 0 1em;
+
+      &-container {
         display: flex;
-        // justify-content: end;
-        align-items: center;
-        width: 50%;
-        gap: 1em;
-        padding: 0 0 0 1em;
-        
-        &-container {
+        width: 25px;
+        height: 25px;
+
+        @include tabletWidth {
           width: 30px;
-          img {
-            width: 100%;
-          }
         }
 
-        h2 {
-          font-size: 1.5rem;
+        img {
+          width: 100%;
         }
       }
 
-      &-mobile-nav {
-        display: flex;
-        width: 50%;
+      h2 {
+        font-size: 1.4rem;
+
+        @include tabletWidth {
+          font-size: 1.5rem;
+        }
+
+        // @include laptopWidth {
+        //   font-size: 2.5rem;
+        // }
       }
     }
 
-    // &__logo-menu-icon {
-    //   display: flex;
-    //   #logo {
-    //     display: flex;
-    //     width: 50%;
-    //     justify-content: end;
-    //     // height: 25px;
-    //     // align-self: center;
-    //     // justify-self: center;
-    //     img {
-    //       width: 100%;
-    //     }
-    //   }
+    &__mobile-nav {
+      display: flex;
+    }
 
-    //   #menu {
-    //     display: flex;
-
-    //     span {
-    //       display: flex;
-    //     }
-    //   }
-    // }
+      &__desktop {
+    display: flex;
+    min-width: 275px;
+    max-width: 350px;
+    a {
+      font-size: 1.125rem;
+      color: white;
+    }
   }
+  }
+
+
 }
 
 .catergory-heading {

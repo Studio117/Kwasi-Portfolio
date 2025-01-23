@@ -40,8 +40,11 @@
 
   <body>
     <!-- ++++++++++++NAVBAR +++++++++++++++++++++++ -->
-    <header id="header" class="m-0 p-0">
+    <header id="header" class="m-0 p-0 fixed-top">
       <nav class="header navbar p-0">
+        <div id="logo">
+          <img src="./assets/images/favicon.png" alt="" />
+        </div>
         <div class="container-fluid justify-content-end d-md-none">
           <!-- =================MOBILE-NAV=================== -->
           <span
@@ -59,7 +62,7 @@
               height="2.5em"
               viewBox="0 0 24 24"
               lc-helper="svg-icon"
-              fill="#FFB0BE"
+              fill="#2a2929"
               class="text-info">
               <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
             </svg>
@@ -74,42 +77,25 @@
               class="offcanvas-body container-fluid align-items-center justify-content-center d-flex">
               <ul
                 class="navbar-nav d-flex align-items-center gap-4 fs-3 fw-bold">
-                <li class="nav-link">
+                <li class="nav-item" data-bs-dismiss="offcanvas">
                   <button
                     type="button"
                     class="btn-close"
                     data-bs-dismiss="offcanvas"
                     aria-label="Close"></button>
                 </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#"
-                    data-bs-dismiss="offcanvas"
-                    >Home</a
-                  >
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <a href="#hero">Home</a>
                 </li>
 
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="#"
-                    data-bs-dismiss="offcanvas"
-                    >Portfolio</a
-                  >
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <a href="#projects">Projects</a>
                 </li>
                 <li class="nav-item" data-bs-dismiss="offcanvas">
-                  <!-- ==OFF-CANVAS- CONTACT-MODAL-TRIGGER== -->
-                  <a
-                    href="#"
-                    class="lc-block rfs-8"
-                    data-bs-toggle="modal"
-                    data-bs-target="#contact"
-                    >Contact</a
-                  >
-                  <!-- ===========MODAL-TRIGGER-END-BEGINING=========== -->
+                  <a href="#skills">Skills</a>
+                </li>
+                <li class="nav-item" data-bs-dismiss="offcanvas">
+                  <a href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -122,8 +108,7 @@
           <a editable="rich" href="#hero" class="me-4 rfs-8">Home</a>
           <a href="#projects" class="lc-block me-4 rfs-8">Projects</a>
           <a href="#skills" class="lc-block me-4 rfs-8">Skills</a>
-          <a href="#contact">Contact</a
-          >
+          <a href="#contact">Contact</a>
         </div>
       </nav>
     </header>
@@ -314,33 +299,43 @@
           <div class="skills__collab-tools-icons">
             <div class="skills__collab-tools-icons-item">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" alt="figma icon"/>
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg"
+                alt="figma icon" />
             </div>
 
             <div class="skills__collab-tools-icons-item">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="github icon"/>
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                alt="github icon" />
             </div>
 
             <div class="skills__collab-tools-icons-item">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg" alt="jira icon"/>
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original-wordmark.svg"
+                alt="jira icon" />
             </div>
           </div>
-          <hr>
+          <hr />
         </div>
 
         <div class="skills__content-management">
-          <span class="category-heading">CONTENT MANAGEMENT & WEBSITE BUILDERS</span>
+          <span class="category-heading"
+            >CONTENT MANAGEMENT & WEBSITE BUILDERS</span
+          >
           <div class="skills__content-management-icons">
             <div class="skills__content-management-icons-item">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg" alt="wordpress icon" title="wordpress icon"/>
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/wordpress/wordpress-original.svg"
+                alt="wordpress icon"
+                title="wordpress icon" />
             </div>
 
             <div class="skills__content-management-icons-item">
               <img
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg" alt="webflow icon" id="webflowIcon" title="Webflow icon"/>
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/webflow/webflow-original.svg"
+                alt="webflow icon"
+                id="webflowIcon"
+                title="Webflow icon" />
             </div>
 
             <div class="skills__content-management-icons-item">
@@ -350,14 +345,16 @@
                 srcset="
                   https://cdn.mos.cms.futurecdn.net/PkRW9CyPjbtHeRdxY9DPiS-1920-80.jpg 1920w
                 "
-                sizes="100%" alt="Weebly icon" id="weeblyIcon" title="weebly icon"/>
-                
+                sizes="100%"
+                alt="Weebly icon"
+                id="weeblyIcon"
+                title="weebly icon" />
             </div>
 
             <div class="skills__content-management-icons-item">
               <svg
-              alt="Squarespace icon"
-              id="squarespaceIcon"
+                alt="Squarespace icon"
+                id="squarespaceIcon"
                 fill="#000000"
                 width="2rem"
                 height="2rem"
@@ -372,8 +369,8 @@
 
             <div class="skills__content-management-icons-item">
               <svg
-              alt="wix icon"
-              id="wixIcon"
+                alt="wix icon"
+                id="wixIcon"
                 fill="#000000"
                 width="3rem"
                 height="3rem"
@@ -385,7 +382,7 @@
               </svg>
             </div>
           </div>
-          <hr>
+          <hr />
         </div>
       </div>
     </section>

@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6, a, p {
 
 a {
   text-decoration: none;
-  color: rgba(170, 170, 170, 0.6666666667);
+  color: #000;
 }
 
 section {
@@ -34,10 +34,18 @@ section {
 }
 
 #header {
-  background-color: black;
+  position: relative;
 }
 #header .header {
-  background-color: rgb(16, 100, 15);
+  background-color: #2a2929;
+  border-bottom: 1px solid rgba(170, 170, 170, 0.3647058824);
+}
+#header .header #logo {
+  width: 35px;
+  height: 25px;
+}
+#header .header #logo img {
+  width: 100%;
 }
 
 .catergory-heading {
@@ -70,6 +78,7 @@ section {
 
 #hero {
   text-align: center;
+  margin-top: 15px;
 }
 #hero .hero {
   display: flex;
@@ -310,7 +319,7 @@ section {
 }
 #skills .skills__frontend hr {
   width: 60%;
-  color: red;
+  color: rgb(124, 34, 34);
   padding-top: 0;
   padding: 0 0 1em;
 }
@@ -350,7 +359,7 @@ section {
 }
 #skills .skills__backend hr {
   width: 60%;
-  color: red;
+  color: rgb(124, 34, 34);
   padding: 0 0 1em;
 }
 @media (min-width: 1025px) {
@@ -385,7 +394,7 @@ section {
 }
 #skills .skills__collab-tools hr {
   width: 60%;
-  color: red;
+  color: rgb(124, 34, 34);
   padding: 0 0 1em;
 }
 @media (min-width: 1025px) {
@@ -425,7 +434,7 @@ section {
 }
 #skills .skills__content-management hr {
   width: 60%;
-  color: red;
+  color: rgb(124, 34, 34);
   margin-top: -1em;
   padding: 0 0 1em;
 }
